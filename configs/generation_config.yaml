@@ -1,0 +1,132 @@
+# Synthetic Data Generation Configuration
+# Adapted from proven synthetic_data_creation pipeline
+
+# OpenAI Configuration (Updated August 2025)
+openai:
+  # Latest GPT-4.5 / o4-series Models (2024-2025)
+  gpt4_5:
+    model: "gpt-4.5"  # Latest iteration
+    temperature: 0.7
+    max_tokens: 4000
+    rate_limit: 
+      requests_per_minute: 3000
+      tokens_per_minute: 200000
+      
+  o4:
+    model: "o4"  # Latest o4-series model
+    temperature: 0.7
+    max_tokens: 4000
+    rate_limit:
+      requests_per_minute: 2000
+      tokens_per_minute: 150000
+  
+  # GPT-4o (2023 - proven reliable)
+  gpt4o:
+    model: "gpt-4o"
+    temperature: 0.7
+    max_tokens: 4000
+    rate_limit: 
+      requests_per_minute: 3000
+      tokens_per_minute: 150000
+    
+  gpt4_turbo:
+    model: "gpt-4-turbo"
+    temperature: 0.7
+    max_tokens: 4000
+    rate_limit:
+      requests_per_minute: 500
+      tokens_per_minute: 30000
+      
+  # GPT-3.5 (2022 - fast, lightweight)
+  gpt3_5_turbo:
+    model: "gpt-3.5-turbo"
+    temperature: 0.7
+    max_tokens: 4000
+    rate_limit:
+      requests_per_minute: 3500
+      tokens_per_minute: 160000
+      
+  # GPT-4o-mini (for testing/development)
+  gpt4o_mini:
+    model: "gpt-4o-mini"
+    temperature: 0.7
+    max_tokens: 4000
+    rate_limit:
+      requests_per_minute: 1000
+      tokens_per_minute: 200000
+
+# DeepMind Configuration (Updated August 2025)
+deepmind:
+  # Gemini 2.5 (Latest - August 2025)
+  gemini_2_5:
+    model: "gemini-2.5"
+    temperature: 0.7
+    max_tokens: 4000
+    rate_limit:
+      requests_per_minute: 1500
+      tokens_per_minute: 5000000
+      
+  # Gemini 2.0 Flash (2024)
+  gemini_2_flash:
+    model: "gemini-2.0-flash"
+    temperature: 0.7
+    max_tokens: 4000
+    rate_limit:
+      requests_per_minute: 1000
+      tokens_per_minute: 4000000
+      
+  # Gemini 1.5 Pro (current flagship)
+  gemini_1_5_pro:
+    model: "gemini-1.5-pro"
+    temperature: 0.7
+    max_tokens: 4000
+    rate_limit:
+      requests_per_minute: 360
+      tokens_per_minute: 4000000
+      
+  # Gemini 1.5 Flash (faster, good for development)
+  gemini_1_5_flash:
+    model: "gemini-1.5-flash"
+    temperature: 0.7
+    max_tokens: 4000
+    rate_limit:
+      requests_per_minute: 1000
+      tokens_per_minute: 4000000
+
+# Processing Configuration
+processing:
+  # Proven parameters from synthetic_data_creation testing
+  max_facts_per_item: 3  # Optimal for API stability
+  batch_size: 10  # Process in batches of 10
+  retry_attempts: 3
+  retry_delay_seconds: 30
+  
+  # Rate limiting safety margins
+  safety_delay_openai: 1  # 1 second between requests (well under limits)
+  safety_delay_deepmind: 2  # 2 seconds between requests (conservative)
+  
+# Fact Schema Configuration
+fact_extraction:
+  # Domain-specific schemas can be added here
+  # Currently focused on configurable schemas rather than hard-coded COVID
+  default_schema_type: "configurable"
+  max_facts_extracted: 5  # Extract up to 5, limit to 3 for processing
+  
+# Quality Control
+quality:
+  # Content verification thresholds
+  min_content_change_ratio: 0.1  # At least 10% of content should change
+  max_similarity_threshold: 0.9   # Synthetic should be <90% similar to original
+  required_fact_incorporation: 0.8  # At least 80% of modified facts should appear
+  
+# Output Configuration
+output:
+  save_intermediate_results: true
+  include_metadata: true
+  timestamp_format: "%Y%m%d_%H%M%S"
+  
+# Logging
+logging:
+  level: "INFO"
+  include_prompts: false  # Set to true for debugging
+  include_responses: false  # Set to true for debugging
