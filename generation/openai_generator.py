@@ -15,6 +15,12 @@ from typing import List, Dict, Any, Optional
 from dataclasses import dataclass
 import yaml
 
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+api_key = os.getenv("OPENAI_API_KEY")
+
 from fact_schemas import get_fact_schema, validate_fact_schema
 
 # Set up logging
@@ -60,7 +66,7 @@ class OpenAIGenerator:
     
     def __init__(
         self,
-        model_name: str = "gpt-4o",
+        model_name: str = "gpt-3.5-turbo",
         api_key: Optional[str] = None,
         temperature: float = 0.7,
         max_tokens: int = 4000,

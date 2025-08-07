@@ -14,6 +14,11 @@ data/
 raw_data/
 processed_data/
 synthetic_data/
+venv/
+results/
+.env    
+
+
 
 # API keys and secrets
 *.key
