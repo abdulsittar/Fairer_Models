@@ -148,3 +148,7 @@ experiments/
 *.parquet
 *.pt
 *.safetensors
+
+# Model checkpoint directories
+checkpoint-*/
+**/checkpoint-*/
