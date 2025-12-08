@@ -1,0 +1,3 @@
+category,n_real,n_fake,n_significant,n_large_effect,n_medium_effect,avg_effect_size,top_feature,top_effect,real_subjects,fake_subjects
+General News,10145,9833,64,17,34,0.5267120970104994,attribution_ratio,-1.5101030757244003,worldnews,"News, US_News"
+Politics/Government,11272,8411,64,1,15,0.2618176555357758,attribution_ratio,-1.0945880825762577,politicsNews,"politics, Government News"

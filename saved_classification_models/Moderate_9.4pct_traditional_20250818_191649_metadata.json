@@ -1,0 +1,28 @@
+{
+  "experiment_name": "Moderate 9.4%_traditional",
+  "method": "traditional_oversampling",
+  "model_type": "RandomForestClassifier",
+  "vectorizer_type": "CountVectorizer",
+  "fake_f1_score": 0.9352933095205386,
+  "train_size": 35018,
+  "test_size": 8000,
+  "real_count": 21886,
+  "fake_count": 18114,
+  "train_real_count": 17509,
+  "train_fake_original": 14491,
+  "train_fake_oversampled": 17509,
+  "imbalance_gap": 3018,
+  "generation_timestamp": "20250818_191649",
+  "vectorizer_params": {
+    "max_features": 5000,
+    "ngram_range": [
+      1,
+      2
+    ],
+    "stop_words": "english"
+  },
+  "model_params": {
+    "n_estimators": 100,
+    "random_state": 42
+  }
+}

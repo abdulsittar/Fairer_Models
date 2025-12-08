@@ -1,0 +1,942 @@
+{
+  "Politics/Government": {
+    "real_topics": [
+      {
+        "topic_id": "REAL_T1",
+        "words": [
+          "earlier",
+          "preferences",
+          "changes",
+          "primary",
+          "com",
+          "march",
+          "racial",
+          "happened"
+        ],
+        "weights": [
+          0.166711550604582,
+          0.16670038294627484,
+          0.16669946833927818,
+          0.16669780822989738,
+          0.16669746900142654,
+          0.1666967904691941,
+          0.166696201237465,
+          0.1666951085483615
+        ],
+        "coherence_score": 0.16669934742205994
+      },
+      {
+        "topic_id": "REAL_T2",
+        "words": [
+          "earlier",
+          "preferences",
+          "changes",
+          "primary",
+          "com",
+          "march",
+          "racial",
+          "happened"
+        ],
+        "weights": [
+          0.16671155199278326,
+          0.16670038401673956,
+          0.16669946905296384,
+          0.16669780920604865,
+          0.1666974699672418,
+          0.16669679142303626,
+          0.16669620215455863,
+          0.16669510948076655
+        ],
+        "coherence_score": 0.1666993484117673
+      },
+      {
+        "topic_id": "REAL_T3",
+        "words": [
+          "said",
+          "house",
+          "court",
+          "senate",
+          "committee",
+          "law",
+          "representatives",
+          "house representatives"
+        ],
+        "weights": [
+          4.440422794092366,
+          4.021744545134294,
+          3.955554820788949,
+          3.655532331180397,
+          3.507811083834578,
+          3.037503244903431,
+          2.667482417517239,
+          2.6599406582106018
+        ],
+        "coherence_score": 3.493248986957732
+      },
+      {
+        "topic_id": "REAL_T4",
+        "words": [
+          "earlier",
+          "preferences",
+          "changes",
+          "primary",
+          "com",
+          "march",
+          "racial",
+          "happened"
+        ],
+        "weights": [
+          0.16671155199546145,
+          0.16670038401673956,
+          0.16669946905296404,
+          0.16669780921891295,
+          0.1666974699672418,
+          0.16669679142312543,
+          0.16669620215457534,
+          0.16669510948076652
+        ],
+        "coherence_score": 0.16669934841372339
+      },
+      {
+        "topic_id": "REAL_T5",
+        "words": [
+          "trump",
+          "said",
+          "president",
+          "republican",
+          "reuters",
+          "tax",
+          "washington",
+          "united"
+        ],
+        "weights": [
+          17.153080090455823,
+          12.046846793312794,
+          6.266417553039562,
+          5.547375934317527,
+          5.4168547399428375,
+          5.2446184579021216,
+          5.239526353188442,
+          4.543772323895037
+        ],
+        "coherence_score": 7.682311530756769
+      },
+      {
+        "topic_id": "REAL_T6",
+        "words": [
+          "earlier",
+          "preferences",
+          "changes",
+          "primary",
+          "com",
+          "march",
+          "racial",
+          "happened"
+        ],
+        "weights": [
+          0.16671155199026313,
+          0.16670038401673953,
+          0.16669946905296387,
+          0.16669780920228255,
+          0.16669746996724177,
+          0.16669679142303515,
+          0.16669620215456382,
+          0.16669510948076655
+        ],
+        "coherence_score": 0.16669934841098205
+      }
+    ],
+    "fake_topics": [
+      {
+        "topic_id": "FAKE_T1",
+        "words": [
+          "cia",
+          "ross",
+          "acosta",
+          "park",
+          "vietnamese",
+          "obama",
+          "administration",
+          "vietnam"
+        ],
+        "weights": [
+          0.9847634581919867,
+          0.8750771737196679,
+          0.7869884060639201,
+          0.7666313616156479,
+          0.662061656797773,
+          0.6606817510719034,
+          0.6491727882541072,
+          0.6324593419556065
+        ],
+        "coherence_score": 0.7522294922088266
+      },
+      {
+        "topic_id": "FAKE_T2",
+        "words": [
+          "professor",
+          "fraud",
+          "fox news",
+          "fox",
+          "watch",
+          "news",
+          "positions",
+          "obamacare"
+        ],
+        "weights": [
+          0.6617249824706161,
+          0.6425093083714833,
+          0.5812827902037898,
+          0.5662849040974882,
+          0.5266800147904417,
+          0.4277680492180128,
+          0.16669304282828984,
+          0.16669302535883587
+        ],
+        "coherence_score": 0.46745451466736965
+      },
+      {
+        "topic_id": "FAKE_T3",
+        "words": [
+          "trump",
+          "hillary",
+          "president",
+          "clinton",
+          "people",
+          "said",
+          "police",
+          "just"
+        ],
+        "weights": [
+          10.154083509090007,
+          6.382879873873195,
+          6.101807459806612,
+          6.0204127137679695,
+          4.816394113628723,
+          4.75128952886152,
+          4.562544120494822,
+          4.5160658132103935
+        ],
+        "coherence_score": 5.913184641591656
+      },
+      {
+        "topic_id": "FAKE_T4",
+        "words": [
+          "nato",
+          "washington post",
+          "republican presidential",
+          "costs",
+          "role",
+          "spending",
+          "discussed",
+          "questions"
+        ],
+        "weights": [
+          0.923065190910802,
+          0.16777721747536117,
+          0.16745718184540923,
+          0.1673722947985482,
+          0.16737110038015532,
+          0.16734458630553548,
+          0.16732322306108954,
+          0.16727851475095898
+        ],
+        "coherence_score": 0.2618736636909825
+      },
+      {
+        "topic_id": "FAKE_T5",
+        "words": [
+          "president elect",
+          "elect",
+          "cabinet",
+          "areas",
+          "saturday",
+          "chairman",
+          "foundation",
+          "begin"
+        ],
+        "weights": [
+          0.6498330597268219,
+          0.5911956001808901,
+          0.16983272783716213,
+          0.1681266190135435,
+          0.16729439706864724,
+          0.1672754609510996,
+          0.16721793669554458,
+          0.16718472868842346
+        ],
+        "coherence_score": 0.28099506627026655
+      },
+      {
+        "topic_id": "FAKE_T6",
+        "words": [
+          "positions",
+          "obamacare",
+          "medicaid",
+          "relationship",
+          "acosta",
+          "healthcare",
+          "taxes",
+          "real estate"
+        ],
+        "weights": [
+          0.16669352373193555,
+          0.16669350594365048,
+          0.16669339632453117,
+          0.16668947078670562,
+          0.16668898436587654,
+          0.16668890508328296,
+          0.16668882190859893,
+          0.1666883225162173
+        ],
+        "coherence_score": 0.1666906163325998
+      }
+    ],
+    "real_topic_weights": "[0.02314607 0.02314607 0.31435405 0.02314607 0.59306165 0.02314607]",
+    "fake_topic_weights": "[0.04444875 0.03187061 0.8414945  0.02758494 0.0278465  0.02675469]",
+    "n_real_texts": 150,
+    "n_fake_texts": 138,
+    "topic_comparison": [
+      {
+        "topic_id": "CMP_T9",
+        "words": [
+          "said",
+          "russia",
+          "president",
+          "china",
+          "white house",
+          "tillerson",
+          "white",
+          "house"
+        ],
+        "real_weight": 0.07084056077095711,
+        "fake_weight": 0.016284658540183558,
+        "difference": -0.054555902230773556,
+        "abs_difference": 0.054555902230773556
+      },
+      {
+        "topic_id": "CMP_T5",
+        "words": [
+          "tax",
+          "house",
+          "senate",
+          "republican",
+          "republicans",
+          "said",
+          "plan",
+          "obamacare"
+        ],
+        "real_weight": 0.06121752870189712,
+        "fake_weight": 0.008245242086010253,
+        "difference": -0.05297228661588686,
+        "abs_difference": 0.05297228661588686
+      },
+      {
+        "topic_id": "CMP_T8",
+        "words": [
+          "police",
+          "man",
+          "video",
+          "shooting",
+          "said",
+          "women",
+          "arrested",
+          "city"
+        ],
+        "real_weight": 0.017135978885165735,
+        "fake_weight": 0.061741315695680664,
+        "difference": 0.04460533681051493,
+        "abs_difference": 0.04460533681051493
+      },
+      {
+        "topic_id": "CMP_T4",
+        "words": [
+          "clinton",
+          "hillary",
+          "email",
+          "hillary clinton",
+          "state",
+          "emails",
+          "state department",
+          "got"
+        ],
+        "real_weight": 0.013710750033868695,
+        "fake_weight": 0.049399659373712906,
+        "difference": 0.03568890933984421,
+        "abs_difference": 0.03568890933984421
+      },
+      {
+        "topic_id": "CMP_T2",
+        "words": [
+          "twitter com",
+          "pic twitter",
+          "pic",
+          "com",
+          "twitter",
+          "september",
+          "july",
+          "ohio"
+        ],
+        "real_weight": 0.002903471543522918,
+        "fake_weight": 0.03611594677560309,
+        "difference": 0.03321247523208017,
+        "abs_difference": 0.03321247523208017
+      },
+      {
+        "topic_id": "CMP_T10",
+        "words": [
+          "fox",
+          "fox news",
+          "news",
+          "cruz",
+          "kelly",
+          "debate",
+          "republican",
+          "presidential"
+        ],
+        "real_weight": 0.04780722904034032,
+        "fake_weight": 0.023275272093085334,
+        "difference": -0.024531956947254987,
+        "abs_difference": 0.024531956947254987
+      },
+      {
+        "topic_id": "CMP_T6",
+        "words": [
+          "court",
+          "supreme court",
+          "supreme",
+          "ban",
+          "justice",
+          "judge",
+          "order",
+          "appeals"
+        ],
+        "real_weight": 0.038794953156952236,
+        "fake_weight": 0.021443530037040602,
+        "difference": -0.017351423119911634,
+        "abs_difference": 0.017351423119911634
+      },
+      {
+        "topic_id": "CMP_T1",
+        "words": [
+          "trump",
+          "said",
+          "president",
+          "donald",
+          "donald trump",
+          "york",
+          "new york",
+          "new"
+        ],
+        "real_weight": 0.0446002135472359,
+        "fake_weight": 0.030172153798510966,
+        "difference": -0.014428059748724936,
+        "abs_difference": 0.014428059748724936
+      },
+      {
+        "topic_id": "CMP_T3",
+        "words": [
+          "united",
+          "united states",
+          "states",
+          "refugees",
+          "immigration",
+          "america",
+          "refugee",
+          "program"
+        ],
+        "real_weight": 0.03220638530597569,
+        "fake_weight": 0.041266453215198,
+        "difference": 0.009060067909222307,
+        "abs_difference": 0.009060067909222307
+      },
+      {
+        "topic_id": "CMP_T7",
+        "words": [
+          "obama",
+          "administration",
+          "president",
+          "government",
+          "barack",
+          "said",
+          "barack obama",
+          "cuba"
+        ],
+        "real_weight": 0.03142967223324919,
+        "fake_weight": 0.03505903824026297,
+        "difference": 0.0036293660070137804,
+        "abs_difference": 0.0036293660070137804
+      }
+    ]
+  },
+  "General News": {
+    "real_topics": [
+      {
+        "topic_id": "REAL_T1",
+        "words": [
+          "said",
+          "reuters",
+          "government",
+          "president",
+          "minister",
+          "state",
+          "military",
+          "year"
+        ],
+        "weights": [
+          16.864080503650648,
+          8.598263261385938,
+          7.394556753718606,
+          5.570337702903591,
+          5.40322750553504,
+          5.317538716610948,
+          5.115552522349462,
+          4.895532343668389
+        ],
+        "coherence_score": 7.394886163727827
+      },
+      {
+        "topic_id": "REAL_T2",
+        "words": [
+          "putin",
+          "republican",
+          "decided",
+          "got",
+          "couldn",
+          "pence",
+          "idea",
+          "truth"
+        ],
+        "weights": [
+          0.16671948196131534,
+          0.16671320085800906,
+          0.16670482343283224,
+          0.16669870160127462,
+          0.1666986472123083,
+          0.16669760121410704,
+          0.16669672565985552,
+          0.16669588339661376
+        ],
+        "coherence_score": 0.1667031331670395
+      },
+      {
+        "topic_id": "REAL_T3",
+        "words": [
+          "turkish",
+          "erdogan",
+          "ankara",
+          "putin",
+          "kurdish",
+          "kurdistan",
+          "idea",
+          "coast"
+        ],
+        "weights": [
+          2.547009955315471,
+          1.6757205180950747,
+          1.4165101424307764,
+          1.050396024188916,
+          0.7079705153794493,
+          0.31626305085731576,
+          0.17209635266530493,
+          0.16978486047252273
+        ],
+        "coherence_score": 1.006968927425604
+      },
+      {
+        "topic_id": "REAL_T4",
+        "words": [
+          "jerusalem",
+          "israel",
+          "gaza",
+          "palestinian",
+          "hamas",
+          "israeli",
+          "palestinians",
+          "netanyahu"
+        ],
+        "weights": [
+          2.898277185571841,
+          2.743850211177725,
+          1.5844834048066876,
+          1.4342493054402212,
+          1.4093702844037057,
+          1.2370627407705799,
+          0.9512019104072515,
+          0.7252084281656603
+        ],
+        "coherence_score": 1.6229629338429592
+      },
+      {
+        "topic_id": "REAL_T5",
+        "words": [
+          "cambodia",
+          "hun",
+          "hun sen",
+          "kem",
+          "kem sokha",
+          "sokha",
+          "sen",
+          "true"
+        ],
+        "weights": [
+          1.6257468680819587,
+          1.4624401165414376,
+          1.4624401165414376,
+          1.2951921089413934,
+          1.2951921089413934,
+          1.2951921089413934,
+          1.1665512496376897,
+          0.19650554583047436
+        ],
+        "coherence_score": 1.2249075279321473
+      },
+      {
+        "topic_id": "REAL_T6",
+        "words": [
+          "kurdish",
+          "saudi",
+          "iraq",
+          "libya",
+          "iraqi",
+          "kurds",
+          "coast",
+          "baghdad"
+        ],
+        "weights": [
+          2.355026924325018,
+          2.154448769715741,
+          1.9833213670276955,
+          1.6361631021947534,
+          1.5685961348922715,
+          1.5289749789638034,
+          1.4664250923466684,
+          1.436184602448605
+        ],
+        "coherence_score": 1.7661426214893197
+      }
+    ],
+    "fake_topics": [
+      {
+        "topic_id": "FAKE_T1",
+        "words": [
+          "germany",
+          "turkish",
+          "supreme",
+          "regional",
+          "kurdish",
+          "saudi",
+          "arabia",
+          "saudi arabia"
+        ],
+        "weights": [
+          0.16670501183993824,
+          0.16669923440385015,
+          0.1666991826258176,
+          0.16669907089701808,
+          0.16669906495753095,
+          0.1666990065212468,
+          0.16669889188716897,
+          0.16669889188716897
+        ],
+        "coherence_score": 0.16669979437746746
+      },
+      {
+        "topic_id": "FAKE_T2",
+        "words": [
+          "germany",
+          "turkish",
+          "supreme",
+          "regional",
+          "kurdish",
+          "saudi",
+          "arabia",
+          "saudi arabia"
+        ],
+        "weights": [
+          0.1667050114421402,
+          0.16669923440390264,
+          0.16669918262810995,
+          0.16669906962805572,
+          0.16669906368880036,
+          0.1666990052547965,
+          0.166698890625192,
+          0.166698890625192
+        ],
+        "coherence_score": 0.16669979353702366
+      },
+      {
+        "topic_id": "FAKE_T3",
+        "words": [
+          "germany",
+          "turkish",
+          "supreme",
+          "regional",
+          "kurdish",
+          "saudi",
+          "arabia",
+          "saudi arabia"
+        ],
+        "weights": [
+          0.16670501172779015,
+          0.16669923440387666,
+          0.16669918263027886,
+          0.16669906967787262,
+          0.16669906373860915,
+          0.16669900530452555,
+          0.1666988906747645,
+          0.1666988906747645
+        ],
+        "coherence_score": 0.16669979360406023
+      },
+      {
+        "topic_id": "FAKE_T4",
+        "words": [
+          "cruz",
+          "scalia",
+          "ted",
+          "ted cruz",
+          "supreme court",
+          "supreme",
+          "middle east",
+          "east"
+        ],
+        "weights": [
+          3.932143566268546,
+          2.180848289825003,
+          1.8715293389062233,
+          1.8023803412512944,
+          1.6253355207246847,
+          1.4593939939382765,
+          0.19141134663558018,
+          0.18933419367557786
+        ],
+        "coherence_score": 1.6565470739031483
+      },
+      {
+        "topic_id": "FAKE_T5",
+        "words": [
+          "trump",
+          "just",
+          "people",
+          "donald",
+          "donald trump",
+          "obama",
+          "like",
+          "president"
+        ],
+        "weights": [
+          29.52396954377132,
+          7.866884316958109,
+          7.515307184045335,
+          7.176005436801972,
+          6.7230123769502566,
+          6.6551510802301745,
+          6.132086239605346,
+          5.985660284080195
+        ],
+        "coherence_score": 9.697259557805339
+      },
+      {
+        "topic_id": "FAKE_T6",
+        "words": [
+          "turkish",
+          "security forces",
+          "erdogan",
+          "embassy",
+          "concern",
+          "turkey",
+          "spokeswoman",
+          "charges"
+        ],
+        "weights": [
+          0.5657695466389273,
+          0.16910090252854457,
+          0.16809832657193857,
+          0.16736971683332602,
+          0.1671112102518743,
+          0.1670641954273368,
+          0.16700903033438516,
+          0.1668918341936314
+        ],
+        "coherence_score": 0.21730184534749553
+      }
+    ],
+    "real_topic_weights": "[0.83099231 0.02498492 0.03067764 0.0371233  0.03277986 0.04344196]",
+    "fake_topic_weights": "[0.02272397 0.02272397 0.02272397 0.03348402 0.87534526 0.0229988 ]",
+    "n_real_texts": 150,
+    "n_fake_texts": 150,
+    "topic_comparison": [
+      {
+        "topic_id": "CMP_T1",
+        "words": [
+          "trump",
+          "donald",
+          "donald trump",
+          "campaign",
+          "clinton",
+          "just",
+          "hillary",
+          "women"
+        ],
+        "real_weight": 0.0046171250747018356,
+        "fake_weight": 0.08679330861077564,
+        "difference": 0.0821761835360738,
+        "abs_difference": 0.0821761835360738
+      },
+      {
+        "topic_id": "CMP_T3",
+        "words": [
+          "obama",
+          "cruz",
+          "gun",
+          "republicans",
+          "people",
+          "just",
+          "republican",
+          "court"
+        ],
+        "real_weight": 0.005793781373982219,
+        "fake_weight": 0.07135003988771871,
+        "difference": 0.06555625851373649,
+        "abs_difference": 0.06555625851373649
+      },
+      {
+        "topic_id": "CMP_T9",
+        "words": [
+          "election",
+          "party",
+          "said",
+          "germany",
+          "modi",
+          "percent",
+          "year",
+          "political"
+        ],
+        "real_weight": 0.08138824955163251,
+        "fake_weight": 0.017418723527119803,
+        "difference": -0.06396952602451271,
+        "abs_difference": 0.06396952602451271
+      },
+      {
+        "topic_id": "CMP_T2",
+        "words": [
+          "said",
+          "police",
+          "killed",
+          "military",
+          "rohingya",
+          "reuters",
+          "security",
+          "myanmar"
+        ],
+        "real_weight": 0.06005030798576214,
+        "fake_weight": 0.01721640706973926,
+        "difference": -0.042833900916022884,
+        "abs_difference": 0.042833900916022884
+      },
+      {
+        "topic_id": "CMP_T4",
+        "words": [
+          "brexit",
+          "britain",
+          "ireland",
+          "european",
+          "london",
+          "talks",
+          "said",
+          "british"
+        ],
+        "real_weight": 0.047012534748728525,
+        "fake_weight": 0.004892530685095854,
+        "difference": -0.04212000406363267,
+        "abs_difference": 0.04212000406363267
+      },
+      {
+        "topic_id": "CMP_T6",
+        "words": [
+          "white house",
+          "white",
+          "house",
+          "trump",
+          "kushner",
+          "obama",
+          "president",
+          "spicer"
+        ],
+        "real_weight": 0.010998597553290716,
+        "fake_weight": 0.046333770804407655,
+        "difference": 0.03533517325111694,
+        "abs_difference": 0.03533517325111694
+      },
+      {
+        "topic_id": "CMP_T8",
+        "words": [
+          "kurdish",
+          "iraq",
+          "turkey",
+          "referendum",
+          "iraqi",
+          "turkish",
+          "kurds",
+          "baghdad"
+        ],
+        "real_weight": 0.03902626265175734,
+        "fake_weight": 0.00541523512652746,
+        "difference": -0.03361102752522988,
+        "abs_difference": 0.03361102752522988
+      },
+      {
+        "topic_id": "CMP_T5",
+        "words": [
+          "russia",
+          "russian",
+          "moscow",
+          "ministry",
+          "agency",
+          "news agency",
+          "putin",
+          "news"
+        ],
+        "real_weight": 0.04462626018443723,
+        "fake_weight": 0.014179358991655715,
+        "difference": -0.030446901192781515,
+        "abs_difference": 0.030446901192781515
+      },
+      {
+        "topic_id": "CMP_T7",
+        "words": [
+          "israel",
+          "jerusalem",
+          "gaza",
+          "israeli",
+          "palestinian",
+          "peace",
+          "hamas",
+          "capital"
+        ],
+        "real_weight": 0.03478422668202324,
+        "fake_weight": 0.005629247530054328,
+        "difference": -0.02915497915196891,
+        "abs_difference": 0.02915497915196891
+      },
+      {
+        "topic_id": "CMP_T10",
+        "words": [
+          "north",
+          "korea",
+          "korean",
+          "north korea",
+          "united",
+          "china",
+          "south",
+          "states"
+        ],
+        "real_weight": 0.03867022113423492,
+        "fake_weight": 0.012114165521620814,
+        "difference": -0.026556055612614107,
+        "abs_difference": 0.026556055612614107
+      }
+    ]
+  }
+}

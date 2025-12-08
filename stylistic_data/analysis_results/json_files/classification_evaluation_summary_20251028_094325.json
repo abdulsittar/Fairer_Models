@@ -1,0 +1,44 @@
+{
+  "experiment_info": {
+    "timestamp": "20251028_094325",
+    "total_experiments": 16,
+    "datasets_tested": [
+      "original_imbalanced",
+      "random_oversampling",
+      "random_undersampling",
+      "synthetic_augmentation"
+    ],
+    "models_tested": [
+      "Random Forest",
+      "Logistic Regression",
+      "SVM",
+      "Naive Bayes"
+    ]
+  },
+  "best_performers": {
+    "best_accuracy": {
+      "score": 0.8769407705577918,
+      "model": "Logistic Regression",
+      "dataset": "synthetic_augmentation"
+    },
+    "best_f1_macro": {
+      "score": 0.8768013526671602,
+      "model": "Logistic Regression",
+      "dataset": "synthetic_augmentation"
+    }
+  },
+  "method_rankings": {
+    "accuracy": {
+      "synthetic_augmentation": 0.8471104082806211,
+      "random_oversampling": 0.8249353076480737,
+      "random_undersampling": 0.759581881533101,
+      "original_imbalanced": 0.8012862083873757
+    },
+    "f1_macro": {
+      "synthetic_augmentation": 0.8451949313576409,
+      "random_oversampling": 0.822734948529998,
+      "random_undersampling": 0.7574369277954232,
+      "original_imbalanced": 0.7410616642896748
+    }
+  }
+}

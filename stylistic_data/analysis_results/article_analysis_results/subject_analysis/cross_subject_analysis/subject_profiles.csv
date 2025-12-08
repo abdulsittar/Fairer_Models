@@ -1,0 +1,9 @@
+subject,n_articles,high_features_count,low_features_count,top_3_high,top_3_low
+Government News,1570,0,0,,
+Middle-east,778,2,0,"char_count, word_count",
+News,9050,0,0,,
+US_News,783,3,0,"char_count, word_count, commas",
+left-news,4459,0,0,,
+politics,6841,0,0,,
+politicsNews,11272,0,0,,
+worldnews,10145,0,0,,

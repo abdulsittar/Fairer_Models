@@ -1,0 +1,45 @@
+subject,topic_type,topic_id,top_words,coherence_score,n_articles,real_weight,fake_weight,difference,pattern
+Politics/Government,real,REAL_T1,"earlier, preferences, changes, primary, com, march, racial, happened",0.16669934742205994,150.0,,,,
+Politics/Government,real,REAL_T2,"earlier, preferences, changes, primary, com, march, racial, happened",0.1666993484117673,150.0,,,,
+Politics/Government,real,REAL_T3,"said, house, court, senate, committee, law, representatives, house representatives",3.493248986957732,150.0,,,,
+Politics/Government,real,REAL_T4,"earlier, preferences, changes, primary, com, march, racial, happened",0.16669934841372339,150.0,,,,
+Politics/Government,real,REAL_T5,"trump, said, president, republican, reuters, tax, washington, united",7.682311530756769,150.0,,,,
+Politics/Government,real,REAL_T6,"earlier, preferences, changes, primary, com, march, racial, happened",0.16669934841098205,150.0,,,,
+Politics/Government,fake,FAKE_T1,"cia, ross, acosta, park, vietnamese, obama, administration, vietnam",0.7522294922088266,138.0,,,,
+Politics/Government,fake,FAKE_T2,"professor, fraud, fox news, fox, watch, news, positions, obamacare",0.46745451466736965,138.0,,,,
+Politics/Government,fake,FAKE_T3,"trump, hillary, president, clinton, people, said, police, just",5.913184641591656,138.0,,,,
+Politics/Government,fake,FAKE_T4,"nato, washington post, republican presidential, costs, role, spending, discussed, questions",0.2618736636909825,138.0,,,,
+Politics/Government,fake,FAKE_T5,"president elect, elect, cabinet, areas, saturday, chairman, foundation, begin",0.28099506627026655,138.0,,,,
+Politics/Government,fake,FAKE_T6,"positions, obamacare, medicaid, relationship, acosta, healthcare, taxes, real estate",0.1666906163325998,138.0,,,,
+Politics/Government,comparative,CMP_T9,"said, russia, president, china, white house, tillerson, white, house",,,0.07084056077095711,0.016284658540183558,-0.054555902230773556,REAL
+Politics/Government,comparative,CMP_T5,"tax, house, senate, republican, republicans, said, plan, obamacare",,,0.06121752870189712,0.008245242086010253,-0.05297228661588686,REAL
+Politics/Government,comparative,CMP_T8,"police, man, video, shooting, said, women, arrested, city",,,0.017135978885165735,0.061741315695680664,0.04460533681051493,FAKE
+Politics/Government,comparative,CMP_T4,"clinton, hillary, email, hillary clinton, state, emails, state department, got",,,0.013710750033868695,0.049399659373712906,0.03568890933984421,FAKE
+Politics/Government,comparative,CMP_T2,"twitter com, pic twitter, pic, com, twitter, september, july, ohio",,,0.002903471543522918,0.03611594677560309,0.03321247523208017,FAKE
+Politics/Government,comparative,CMP_T10,"fox, fox news, news, cruz, kelly, debate, republican, presidential",,,0.04780722904034032,0.023275272093085334,-0.024531956947254987,REAL
+Politics/Government,comparative,CMP_T6,"court, supreme court, supreme, ban, justice, judge, order, appeals",,,0.038794953156952236,0.021443530037040602,-0.017351423119911634,REAL
+Politics/Government,comparative,CMP_T1,"trump, said, president, donald, donald trump, york, new york, new",,,0.0446002135472359,0.030172153798510966,-0.014428059748724936,REAL
+Politics/Government,comparative,CMP_T3,"united, united states, states, refugees, immigration, america, refugee, program",,,0.03220638530597569,0.041266453215198,0.009060067909222307,FAKE
+Politics/Government,comparative,CMP_T7,"obama, administration, president, government, barack, said, barack obama, cuba",,,0.03142967223324919,0.03505903824026297,0.0036293660070137804,FAKE
+General News,real,REAL_T1,"said, reuters, government, president, minister, state, military, year",7.394886163727827,150.0,,,,
+General News,real,REAL_T2,"putin, republican, decided, got, couldn, pence, idea, truth",0.1667031331670395,150.0,,,,
+General News,real,REAL_T3,"turkish, erdogan, ankara, putin, kurdish, kurdistan, idea, coast",1.006968927425604,150.0,,,,
+General News,real,REAL_T4,"jerusalem, israel, gaza, palestinian, hamas, israeli, palestinians, netanyahu",1.6229629338429592,150.0,,,,
+General News,real,REAL_T5,"cambodia, hun, hun sen, kem, kem sokha, sokha, sen, true",1.2249075279321473,150.0,,,,
+General News,real,REAL_T6,"kurdish, saudi, iraq, libya, iraqi, kurds, coast, baghdad",1.7661426214893197,150.0,,,,
+General News,fake,FAKE_T1,"germany, turkish, supreme, regional, kurdish, saudi, arabia, saudi arabia",0.16669979437746746,150.0,,,,
+General News,fake,FAKE_T2,"germany, turkish, supreme, regional, kurdish, saudi, arabia, saudi arabia",0.16669979353702366,150.0,,,,
+General News,fake,FAKE_T3,"germany, turkish, supreme, regional, kurdish, saudi, arabia, saudi arabia",0.16669979360406023,150.0,,,,
+General News,fake,FAKE_T4,"cruz, scalia, ted, ted cruz, supreme court, supreme, middle east, east",1.6565470739031483,150.0,,,,
+General News,fake,FAKE_T5,"trump, just, people, donald, donald trump, obama, like, president",9.697259557805339,150.0,,,,
+General News,fake,FAKE_T6,"turkish, security forces, erdogan, embassy, concern, turkey, spokeswoman, charges",0.21730184534749553,150.0,,,,
+General News,comparative,CMP_T1,"trump, donald, donald trump, campaign, clinton, just, hillary, women",,,0.0046171250747018356,0.08679330861077564,0.0821761835360738,FAKE
+General News,comparative,CMP_T3,"obama, cruz, gun, republicans, people, just, republican, court",,,0.005793781373982219,0.07135003988771871,0.06555625851373649,FAKE
+General News,comparative,CMP_T9,"election, party, said, germany, modi, percent, year, political",,,0.08138824955163251,0.017418723527119803,-0.06396952602451271,REAL
+General News,comparative,CMP_T2,"said, police, killed, military, rohingya, reuters, security, myanmar",,,0.06005030798576214,0.01721640706973926,-0.042833900916022884,REAL
+General News,comparative,CMP_T4,"brexit, britain, ireland, european, london, talks, said, british",,,0.047012534748728525,0.004892530685095854,-0.04212000406363267,REAL
+General News,comparative,CMP_T6,"white house, white, house, trump, kushner, obama, president, spicer",,,0.010998597553290716,0.046333770804407655,0.03533517325111694,FAKE
+General News,comparative,CMP_T8,"kurdish, iraq, turkey, referendum, iraqi, turkish, kurds, baghdad",,,0.03902626265175734,0.00541523512652746,-0.03361102752522988,REAL
+General News,comparative,CMP_T5,"russia, russian, moscow, ministry, agency, news agency, putin, news",,,0.04462626018443723,0.014179358991655715,-0.030446901192781515,REAL
+General News,comparative,CMP_T7,"israel, jerusalem, gaza, israeli, palestinian, peace, hamas, capital",,,0.03478422668202324,0.005629247530054328,-0.02915497915196891,REAL
+General News,comparative,CMP_T10,"north, korea, korean, north korea, united, china, south, states",,,0.03867022113423492,0.012114165521620814,-0.026556055612614107,REAL

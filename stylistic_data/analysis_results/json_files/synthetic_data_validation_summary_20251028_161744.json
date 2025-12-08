@@ -1,0 +1,91 @@
+{
+  "experiment_info": {
+    "timestamp": "20251028_161744",
+    "experiment_type": "synthetic_data_quality_validation",
+    "models_tested": [
+      "Random Forest",
+      "Logistic Regression",
+      "SVM",
+      "Naive Bayes"
+    ],
+    "synthetic_samples_tested": 11668,
+    "methodology": "Train on original imbalanced data, test on synthetic data vs minority class data"
+  },
+  "quality_assessment": {
+    "overall_distribution": {
+      "POOR": 4
+    },
+    "average_accuracy_difference": -0.5160558554383232,
+    "average_f1_difference": -0.2769376847960691,
+    "std_accuracy_difference": 0.04068417947446812,
+    "std_f1_difference": 0.018858031018877435,
+    "best_model": "SVM",
+    "worst_model": "Logistic Regression"
+  },
+  "detailed_results": [
+    {
+      "model_name": "Random Forest",
+      "original_overall_accuracy": 0.7980977086035452,
+      "original_overall_f1": 0.7168508417635513,
+      "original_minority_accuracy": 0.5287456445993032,
+      "original_minority_f1": 0.34586894586894584,
+      "synthetic_accuracy": 0.06247857387727117,
+      "synthetic_f1": 0.0588045494877793,
+      "accuracy_difference": -0.466267070722032,
+      "f1_difference": -0.28706439638116654,
+      "quality_assessment": "POOR",
+      "test_samples_original": 4626,
+      "test_samples_synthetic": 11668,
+      "minority_samples_in_test": 1148,
+      "combined_diff": 0.7533314671031985
+    },
+    {
+      "model_name": "Logistic Regression",
+      "original_overall_accuracy": 0.8045827929096412,
+      "original_overall_f1": 0.7530013797274566,
+      "original_minority_accuracy": 0.7003484320557491,
+      "original_minority_f1": 0.41188524590163933,
+      "synthetic_accuracy": 0.14561193006513543,
+      "synthetic_f1": 0.12710406224283682,
+      "accuracy_difference": -0.5547365019906138,
+      "f1_difference": -0.2847811836588025,
+      "quality_assessment": "POOR",
+      "test_samples_original": 4626,
+      "test_samples_synthetic": 11668,
+      "minority_samples_in_test": 1148,
+      "combined_diff": 0.8395176856494162
+    },
+    {
+      "model_name": "SVM",
+      "original_overall_accuracy": 0.7864245568525724,
+      "original_overall_f1": 0.7339794749536697,
+      "original_minority_accuracy": 0.6898954703832753,
+      "original_minority_f1": 0.40824742268041236,
+      "synthetic_accuracy": 0.18983544737744257,
+      "synthetic_f1": 0.159547648202838,
+      "accuracy_difference": -0.5000600230058327,
+      "f1_difference": -0.24869977447757435,
+      "quality_assessment": "POOR",
+      "test_samples_original": 4626,
+      "test_samples_synthetic": 11668,
+      "minority_samples_in_test": 1148,
+      "combined_diff": 0.748759797483407
+    },
+    {
+      "model_name": "Naive Bayes",
+      "original_overall_accuracy": 0.816039775183744,
+      "original_overall_f1": 0.7604149607140216,
+      "original_minority_accuracy": 0.6733449477351916,
+      "original_minority_f1": 0.4023945861530453,
+      "synthetic_accuracy": 0.1301851217003771,
+      "synthetic_f1": 0.11518920148631227,
+      "accuracy_difference": -0.5431598260348145,
+      "f1_difference": -0.287205384666733,
+      "quality_assessment": "POOR",
+      "test_samples_original": 4626,
+      "test_samples_synthetic": 11668,
+      "minority_samples_in_test": 1148,
+      "combined_diff": 0.8303652107015476
+    }
+  ]
+}

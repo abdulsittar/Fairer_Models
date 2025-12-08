@@ -1,0 +1,38 @@
+{
+  "export_timestamp": "2025-10-27T06:29:23.659610",
+  "dataset_info": {
+    "total_headlines": 11668,
+    "unique_headlines": 11668,
+    "duplicate_rate": 0.0,
+    "quality_score": 0.6614123693006513,
+    "average_length": 67.91900925608502,
+    "domain_distribution": {
+      "celebrity": 771,
+      "political": 342,
+      "general": 10566
+    }
+  },
+  "generation_info": {
+    "original_dataset_size": 11686,
+    "original_duplicate_rate": 0.0,
+    "duplicates_replaced": 6904,
+    "replacement_method": "GPT-3.5-turbo with smart diversity prompts",
+    "deduplication_approach": "Targeted replacement of duplicate patterns"
+  },
+  "quality_metrics": {
+    "overall_quality": 0.6614123693006513,
+    "feature_count": 16,
+    "top_features": [
+      "char_count",
+      "word_count",
+      "exclamation_count",
+      "question_count",
+      "quote_count",
+      "caps_word_count",
+      "is_question_headline",
+      "has_quotes",
+      "clickbait_word_count",
+      "sensational_word_count"
+    ]
+  }
+}

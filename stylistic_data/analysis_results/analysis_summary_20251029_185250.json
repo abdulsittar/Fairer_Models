@@ -1,0 +1,212 @@
+{
+  "analysis_timestamp": "20251029_185250",
+  "dataset_info": {
+    "total_headlines": 23196,
+    "real_headlines": 17441,
+    "fake_headlines": 5755,
+    "features_extracted": 93
+  },
+  "statistical_summary": {
+    "total_features_analyzed": 93,
+    "bonferroni_significant": 48,
+    "fdr_significant": 66,
+    "large_effect_size": 0,
+    "medium_effect_size": 0,
+    "small_effect_size": 12
+  },
+  "top_discriminating_features": [
+    {
+      "feature": "has_reports",
+      "cohens_d": 0.4314318405936652,
+      "fdr_significant": true
+    },
+    {
+      "feature": "question_count",
+      "cohens_d": 0.34912746232280867,
+      "fdr_significant": true
+    },
+    {
+      "feature": "is_question_headline",
+      "cohens_d": 0.29472699918727857,
+      "fdr_significant": true
+    },
+    {
+      "feature": "has_numbers",
+      "cohens_d": -0.28208863599837547,
+      "fdr_significant": true
+    },
+    {
+      "feature": "number_count",
+      "cohens_d": -0.2593895236998295,
+      "fdr_significant": true
+    },
+    {
+      "feature": "quantitative_content",
+      "cohens_d": -0.2580030447530976,
+      "fdr_significant": true
+    },
+    {
+      "feature": "has_quotes",
+      "cohens_d": -0.24630932223548202,
+      "fdr_significant": true
+    },
+    {
+      "feature": "digit_count",
+      "cohens_d": -0.2335825852118908,
+      "fdr_significant": true
+    },
+    {
+      "feature": "quote_count",
+      "cohens_d": -0.2217908673380734,
+      "fdr_significant": true
+    },
+    {
+      "feature": "quote_ratio",
+      "cohens_d": -0.20999226703593005,
+      "fdr_significant": true
+    },
+    {
+      "feature": "digit_ratio",
+      "cohens_d": -0.20754823954975246,
+      "fdr_significant": true
+    },
+    {
+      "feature": "speculation_count",
+      "cohens_d": 0.200346438019616,
+      "fdr_significant": true
+    },
+    {
+      "feature": "sentiment_polarity",
+      "cohens_d": -0.1995355671528896,
+      "fdr_significant": true
+    },
+    {
+      "feature": "speculation_ratio",
+      "cohens_d": 0.17771171135211572,
+      "fdr_significant": true
+    },
+    {
+      "feature": "reporting_verb_count",
+      "cohens_d": 0.172645888546674,
+      "fdr_significant": true
+    },
+    {
+      "feature": "title_case_ratio",
+      "cohens_d": 0.15796031659444537,
+      "fdr_significant": true
+    },
+    {
+      "feature": "multimedia_indicator_count",
+      "cohens_d": -0.1472939400826546,
+      "fdr_significant": true
+    },
+    {
+      "feature": "upper_ratio",
+      "cohens_d": 0.13852364194353128,
+      "fdr_significant": true
+    },
+    {
+      "feature": "has_breaking",
+      "cohens_d": 0.1367033842895161,
+      "fdr_significant": true
+    },
+    {
+      "feature": "word_density",
+      "cohens_d": -0.13558988164778354,
+      "fdr_significant": true
+    }
+  ],
+  "ngram_analysis": {
+    "total_ngrams_analyzed": 2715,
+    "fake_preferred_ngrams": [
+      "pitt jennifer",
+      "stefani blake",
+      "jolie divorce",
+      "fake news",
+      "new report",
+      "bf",
+      "debunked",
+      "neri",
+      "rumor",
+      "neri oxman",
+      "oxman",
+      "connecting",
+      "aniston brad",
+      "hassan",
+      "jameel"
+    ],
+    "real_preferred_ngrams": [
+      "disney",
+      "cardi b",
+      "cardi",
+      "lauren",
+      "bachelor paradise",
+      "dressed",
+      "grey s",
+      "anatomy",
+      "finale",
+      "s anatomy",
+      "recap",
+      "sneak",
+      "grace",
+      "mtv",
+      "awards 2018"
+    ]
+  },
+  "topic_analysis": {
+    "real_perplexity": 670.6196239448805,
+    "fake_perplexity": 433.15685092972234,
+    "real_top_topics": [
+      [
+        "star",
+        "says",
+        "reveals",
+        "worth",
+        "wife"
+      ],
+      [
+        "season",
+        "jenner",
+        "kylie",
+        "new",
+        "kylie jenner"
+      ],
+      [
+        "2018",
+        "awards",
+        "best",
+        "2017",
+        "kate"
+      ]
+    ],
+    "fake_top_topics": [
+      [
+        "brad",
+        "pitt",
+        "brad pitt",
+        "angelina",
+        "jennifer"
+      ],
+      [
+        "trump",
+        "caitlyn",
+        "caitlyn jenner",
+        "celebrities",
+        "jenner"
+      ],
+      [
+        "justin",
+        "selena",
+        "gomez",
+        "selena gomez",
+        "bieber"
+      ]
+    ]
+  },
+  "synthetic_analysis": {
+    "synthetic_headlines_analyzed": 11668,
+    "features_closer_to_real": 3,
+    "features_closer_to_fake": 12,
+    "problem_identified": false
+  }
+}
