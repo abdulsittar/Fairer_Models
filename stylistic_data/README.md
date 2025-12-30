@@ -1,309 +1,326 @@
-# Stylistic Data Analysis Results
+# Stylistic Data Analysis - Detailed Results
 
-## Overview
+**Comprehensive analysis of stylistic features for synthetic fake news generation across 4 datasets**
 
-# Stylistic Data Analysis - Organized Results
+## 🎯 Overview
 
-This folder contains comprehensive analysis of stylistic features in fake news detection, focusing on both tweets and headlines.
+This folder contains all notebooks, data, and results for our stylistic synthetic data generation experiments. The approach extracts distinguishing linguistic features from fake news and uses them to guide LLM-based synthetic data generation.
+
+### Key Results Summary
+
+| Dataset | Synthetic Generated | Cost | Best Method | F1/Accuracy |
+|---------|---------------------|------|-------------|-------------|
+| Tweets | 3,772 | $0.33 | Undersampling | 0.9545 F1 |
+| Headlines | 11,686 | $1.08 | Undersampling + NB | 80.4% |
+| Articles | 2,222 | ~$1.50 | Synthetic | 0.985 F1 |
+| Multilingual | 500 | ~$5.00 | Synthetic | 93.82% Acc |
+
+---
 
 ## 📁 Folder Structure
 
 ```
 stylistic_data/
-├── README.md                                    # This file
-├── results/                                     # Organized data files and summaries
-│   ├── csv_files/                              # All CSV result files
-│   ├── json_files/                             # All JSON metadata files  
-│   └── summaries/                              # Comprehensive analysis summaries
-│       ├── HEADLINE_ANALYSIS_SUMMARY.md        # Headlines analysis overview
-│       └── TWEET_ANALYSIS_SUMMARY.md           # Tweets analysis overview
-├── *.ipynb                                     # Analysis notebooks (kept in main folder)
-└── synthetic_headlines_deduplicated_*.txt      # Text files (kept in main folder)
+├── README.md                           # This file
+├── tweets/                             # Twitter fake news (134,198 samples)
+│   ├── tweet_feature_analysis.ipynb
+│   ├── stylistic_synthetic_tweet_generation.ipynb
+│   ├── stylistic_imbalance_severity_analysis.ipynb
+│   ├── controlled_model_evaluation.ipynb
+│   └── chatbot_classification_evaluation.ipynb
+│
+├── headlines/                          # FakeNewsNet headlines (23,196 samples)
+│   ├── comprehensive_headline_feature_analysis.ipynb
+│   ├── advanced_synthetic_headline_generation.ipynb
+│   ├── synthetic_headline_scalability_analysis.ipynb
+│   ├── comprehensive_classification_evaluation.ipynb
+│   └── results_feature_analysis/
+│
+├── articles/                           # Kaggle articles (~20K samples)
+│   ├── comprehensive_article_feature_analysis.ipynb
+│   ├── subject_feature_extraction.ipynb
+│   ├── synthetic_article_generation.ipynb
+│   └── classification_model_comparison.ipynb
+│
+├── multilingual/                       # TALLIP 5-language dataset (~5K samples)
+│   ├── multilingual_dataset_analysis.ipynb
+│   ├── multilingual_synthetic_generation.ipynb
+│   └── multilingual_classification_comparison.ipynb
+│
+└── analysis_results/                   # Consolidated outputs
+    ├── csv_files/                      # Feature datasets, results
+    ├── json_files/                     # Metadata, summaries
+    └── summaries/                      # Markdown analysis reports
 ```
-
-## 📊 Analysis Notebooks
-
-### Headlines Analysis
-- `comprehensive_headline_feature_analysis.ipynb` - Feature extraction and analysis
-- `advanced_synthetic_headline_generation.ipynb` - Refined generation approach  
-- `synthetic_headline_scalability_analysis.ipynb` - Full scalability testing and production
-- `comprehensive_classification_evaluation.ipynb` - Model comparison and validation
-- `gpt_headline_generation.ipynb` - Initial generation experiments
-- `synthetic_headline_generation.ipynb` - Early generation attempts
-
-### Tweet Analysis  
-- `stylistic_synthetic_tweet_generation.ipynb` - Tweet generation experiments
-- `stylistic_imbalance_severity_analysis.ipynb` - Class imbalance impact analysis
-
-### Classification Studies
-- `chatbot_classification_evaluation.ipynb` - Chatbot-based classification
-- `controlled_model_evaluation.ipynb` - Controlled experiment design
-
-## 🎯 Key Results Summary
-
-### Headlines Analysis Achievements
-- ✅ **Generated 11,686 synthetic headlines** achieving perfect 1:1 dataset balance
-- ✅ **Cost-effective solution**: $1.08 total cost using GPT-3.5 Turbo
-- ✅ **Quality validation**: Comprehensive comparison across ML models and vectorizers
-- ✅ **Method comparison**: Synthetic augmentation vs traditional resampling methods
-
-### Tweet Analysis Achievements  
-- ✅ **Identified 8 critical distinguishing features** (effect sizes 0.108-0.169)
-- ✅ **Quantified vocabulary differences**: Up to 24.38× frequency variations
-- ✅ **Explained synthetic data failure**: Previous approaches mimicked real patterns, not fake ones
-- ✅ **Developed 6 improved generation strategies** based on empirical evidence
-
-## 📈 Performance Highlights
-
-### Best Performing Combinations
-1. **Headlines**: Random Undersampling + Naive Bayes + TF-IDF = 80.4% fake detection
-2. **Tweets**: Random Oversampling baseline = 94.39% F1 score (target to beat)
-
-### Synthetic Data Quality
-- **Headlines**: 45.7% fake detection (improvement over 40.3% baseline, but underperforms traditional resampling)
-- **Tweets**: Previous synthetic approach underperformed; new strategies designed to exceed 94.39% baseline
-
-## 🔍 Key Insights
-
-### What Works
-- **Traditional resampling methods** (especially random undersampling) consistently outperform synthetic augmentation
-- **Naive Bayes + TF-IDF** combination shows strong performance across both domains
-- **Scalable generation pipelines** with checkpoint protection enable large-scale synthetic data creation
-
-### What Needs Improvement
-- **Synthetic data quality consistency** - performance varies between test batches and full datasets
-- **Generation-validation alignment** - synthetic content should target classifier patterns, not just content variation
-- **Cost-quality tradeoffs** - GPT-3.5 vs GPT-4 balance between cost savings and quality
-
-## 💡 Research Contributions
-
-### Methodological Innovations
-1. **Principled validation framework** using trained baseline models as benchmarks
-2. **Multi-scale testing approach** with statistical robustness analysis
-3. **Comprehensive method comparison** across models, vectorizers, and resampling strategies
-4. **Evidence-based generation strategies** derived from quantitative feature analysis
-
-### Practical Applications
-1. **Production-ready generation pipeline** with checkpoint protection and cost optimization
-2. **Clear performance benchmarks** for evaluating synthetic data quality
-3. **Reproducible experimental framework** for fake news detection research
-4. **Cost-effective dataset balancing** achieving perfect 1:1 ratios at minimal cost
-
-## 📋 Data Files Reference
-
-### Key CSV Files (in `/results/csv_files/`)
-- `synthetic_headlines_deduplicated_*.csv` - Main synthetic headline datasets
-- `classification_evaluation_results_*.csv` - Model performance comparisons
-- `synthetic_validation_results_*.csv` - Validation experiment results
-
-### Metadata Files (in `/results/json_files/`)
-- `generation_metadata_*.json` - Generation parameters and statistics
-- `classification_evaluation_summary_*.json` - Model evaluation metadata
-- `synthetic_data_validation_summary_*.json` - Validation experiment metadata
-
-## 🎯 Usage Guidelines
-
-### For Headlines Research
-1. **Start with**: `HEADLINE_ANALYSIS_SUMMARY.md` for comprehensive overview
-2. **Best approach**: Use Random Undersampling + Naive Bayes + TF-IDF for optimal performance
-3. **Synthetic data**: Available but traditional methods currently outperform
-4. **Cost consideration**: GPT-3.5 provides 90% cost savings with acceptable quality loss
-
-### For Tweet Research  
-1. **Start with**: `TWEET_ANALYSIS_SUMMARY.md` for feature analysis insights
-2. **Generation strategy**: Implement stylistic pattern mimicking or vocabulary-driven approaches
-3. **Target performance**: Beat 94.39% F1 score random oversampling baseline
-4. **Feature focus**: Emphasize exclamation patterns, length differences, and vocabulary choices
-
-## 🚀 Next Steps
-
-### Immediate Priorities
-1. **Implement improved tweet generation** using evidence-based strategies
-2. **Refine headline generation** to improve consistency and quality
-3. **Cross-domain validation** applying methods to other fake news datasets
-4. **Deployment testing** in real-world fake news detection systems
-
-### Future Research
-1. **Hybrid approaches** combining synthetic data with traditional resampling
-2. **Advanced generation methods** using fine-tuning or few-shot learning
-3. **Multi-modal extensions** incorporating images, videos, and metadata
-4. **Temporal analysis** of how fake news patterns evolve over time
 
 ---
 
-**Last Updated**: November 2025  
-**Total Synthetic Headlines Generated**: 11,686  
-**Total Tweets Analyzed**: 134,198  
-**Best Performance Achieved**: 80.4% fake detection (headlines), 94.39% F1 (tweets baseline) The research explores whether generating synthetic tweets that match the linguistic patterns of fake news improves classification performance compared to traditional oversampling methods.
+## 📊 Dataset Results
 
-## Project Structure
+### 1. Twitter Dataset
 
-### Notebooks
+**Source:** [Figshare](https://figshare.com/articles/dataset/Twitter_dataset/28069163/1) | **Model:** GPT-3.5 Turbo
 
-1. **`stylistic_synthetic_tweet_generation.ipynb`** - Generation of 3,772 synthetic fake tweets using GPT-3.5 Turbo
-2. **`classification_methods_comparison.ipynb`** - Comprehensive comparison of classification methods and features  
-3. **`stylistic_imbalance_severity_analysis.ipynb`** - Analysis of model performance under different levels of class imbalance
-4. **`controlled_model_evaluation.ipynb`** - Evaluation of saved models on controlled test datasets
-5. **`chatbot_classification_evaluation.ipynb`** - Evaluation of LLM-based classification approaches
+| Metric | Value |
+|--------|-------|
+| Real tweets | 68,985 |
+| Fake tweets | 65,213 |
+| Synthetic generated | 3,772 |
+| Generation cost | $0.33 |
+| Generation time | 34.2 minutes |
 
-## Key Findings
+**Feature Extraction Results:**
+- Extracted 30+ features across 4 categories (length, stylistic, semantic, linguistic)
+- Identified **8 critical distinguishing features** with effect sizes 0.108-0.169
+- Quantified vocabulary differences up to **24.38× frequency variations**
 
-### 1. Synthetic Data Generation Results
+**Key Stylistic Differences Found:**
 
-**Generation Statistics:**
-- **Total synthetic tweets generated**: 3,772
-- **Cost**: $0.33 (GPT-3.5 Turbo)
-- **Time**: 34.2 minutes
-- **Model**: GPT-3.5 Turbo with carefully crafted prompts
+| Feature | Fake Tweets | Real Tweets | Difference |
+|---------|-------------|-------------|------------|
+| Word count | 36-38 words | 34 words | +6.6% |
+| Exclamation marks | Higher | Lower | +56% |
+| Hashtag usage | Lower | Higher | -35.7% |
+| Repetitive phrasing | Higher | Lower | +8.1% |
 
-**Stylistic Features Achieved:**
-- **Word count**: 32.3 words (target: 36.3) - 88% accuracy
-- **Exclamation usage**: 2.35 per tweet (target: 0.31) - Exceeded target significantly
-- **Hashtag usage**: 0.06 per tweet (target: 0.16) - 37% of target
-- **Vocabulary**: Successfully incorporated fake-specific terms (biden, vaccine, fraud, election)
+**Synthetic Generation Quality:**
+- Word count achieved: 32.3 words (target: 36.3) - 88% accuracy
+- Vocabulary: Successfully incorporated fake-specific terms (biden, vaccine, fraud, election)
+- Topic distribution: Even split across 5 topics (~20% each)
 
-**Topic Distribution:**
-- Election Fraud: 760 tweets (20.1%)
-- COVID/Vaccines: 760 tweets (20.1%) 
-- Biden Criticism: 752 tweets (19.9%)
-- Government Overreach: 750 tweets (19.9%)
-- Corruption: 750 tweets (19.9%)
+**Classification Results:**
 
-### 2. Classification Performance Comparison
+| Method | F1 Score (Fake) |
+|--------|-----------------|
+| Undersampling | **0.9545** |
+| Random Oversampling | 0.9445 |
+| Stylistic Synthetic | 0.9442 |
+| Imbalanced Baseline | 0.9404 |
 
-**Best Performing Methods (F1 Score for Fake Class):**
-1. **Undersampling Majority Class**: 0.9545 F1
-2. **Random Oversampling**: 0.9445 F1  
-3. **Stylistic Synthetic Data**: 0.9442 F1
-4. **Imbalanced Baseline**: 0.9404 F1
+**Imbalance Severity Analysis:**
 
-**Key Results:**
-- Stylistic synthetic data **outperformed** the previous baseline by +0.0003 (+0.03%)
-- Random oversampling still slightly ahead by 0.0004 (0.04%)
-- Undersampling proved to be the most effective approach overall
+| Imbalance Level | Dataset Size | Traditional | Stylistic | Undersampling |
+|-----------------|--------------|-------------|-----------|---------------|
+| 2.8% (Baseline) | 134K | 0.9714 | 0.9708 | **0.9733** |
+| 9.4% (Moderate) | 40K | **0.9540** | 0.9496 | 0.9491 |
+| 25.1% (Severe) | 15K | **0.9491** | 0.9356 | 0.9327 |
+| 50.2% (Extreme) | 7.5K | **0.9594** | 0.9432 | 0.9073 |
 
-### 3. Imbalance Severity Analysis
+**Controlled Evaluation (on LLM-generated test data):**
+- Stylistic models **consistently outperformed** traditional models
+- Best: Severe Imbalance Stylistic = 0.9848 F1
+- Stylistic wins at all 4 imbalance levels
 
-**Tested Imbalance Levels:**
-- **Baseline (2.8% imbalance)**: 134K tweets, 48.6% minority class
-- **Moderate (9.4% imbalance)**: 40K tweets, 45.3% minority class  
-- **Severe (25.1% imbalance)**: 15K tweets, 37.4% minority class
-- **Extreme (50.2% imbalance)**: 7.5K tweets, 24.7% minority class
+**LLM Classification (Zero-shot vs Few-shot):**
+- Zero-Shot: 93.0% accuracy (surprisingly better)
+- Few-Shot: 90.0% accuracy
 
-**Performance by Imbalance Level:**
-- **2.8%**: Undersampling (0.9733) > Traditional (0.9714) > Stylistic (0.9708)
-- **9.4%**: Traditional (0.9540) > Stylistic (0.9496) > Undersampling (0.9491)
-- **25.1%**: Traditional (0.9491) > Stylistic (0.9356) > Undersampling (0.9327)
-- **50.2%**: Traditional (0.9594) > Stylistic (0.9432) > Undersampling (0.9073)
+---
 
-**Key Findings:**
-- Traditional oversampling maintained strong performance across all imbalance levels
-- Stylistic synthetic showed competitive performance but didn't achieve breakthrough improvements
-- Undersampling worked best only at near-balanced conditions
+### 2. Headlines Dataset
 
-### 4. Controlled Model Evaluation
+**Source:** [FakeNewsNet](https://github.com/KaiDMML/FakeNewsNet) | **Model:** GPT-3.5 Turbo
 
-**8 Models Tested:**
-- 4 imbalance levels × 2 methods (traditional vs stylistic) = 8 saved models
-- All models used Random Forest with Count Vectorization
-- Proper train/test split methodology to avoid data leakage
+| Metric | Value |
+|--------|-------|
+| Real headlines | 17,441 |
+| Fake headlines | 5,755 |
+| Synthetic generated | 11,686 |
+| Generation cost | $1.08 |
+| Batch size | 25 headlines/request |
 
-**Test Results on LLM-Generated Controlled Dataset:**
-- **Best Model**: Severe Imbalance - Stylistic (0.9848 F1)
-- **Traditional vs Stylistic Performance**:
-  - Baseline: Traditional (0.8571) vs Stylistic (0.9189) - **Stylistic wins**
-  - Severe: Traditional (0.8571) vs Stylistic (0.9848) - **Stylistic wins**  
-  - Extreme: Traditional (0.8166) vs Stylistic (0.9848) - **Stylistic wins**
-  - Moderate: Traditional (0.8475) vs Stylistic (0.9744) - **Stylistic wins**
+**Key Achievements:**
+- ✅ Generated 11,686 synthetic headlines achieving **perfect 1:1 balance**
+- ✅ 90% cost savings vs GPT-4 ($1.08 vs $10.76)
+- ✅ Comprehensive validation across ML models and vectorizers
 
-### 5. LLM-Based Classification Evaluation
+**Stylistic Characteristics Targeted:**
+- Celebrity/entertainment focus
+- Subtle manipulation (not obviously fake)
+- Emotional engagement triggers
+- Social media/tabloid tone
+- Specific names and details for credibility
 
-**Zero-Shot vs Few-Shot Performance:**
-- **Zero-Shot Accuracy**: 93.0%
-  - Precision: 0.94, Recall: 0.93, F1: 0.93
-- **Few-Shot Accuracy**: 90.0%
-  - Precision: 0.92, Recall: 0.90, F1: 0.90
+**Topic Rotation:** Celebrity scandals, entertainment secrets, sports controversies, influencer news, Hollywood gossip, music drama, reality TV, celebrity disputes
 
-**Key Insights:**
-- Zero-shot surprisingly outperformed few-shot by 3 percentage points
-- Both approaches showed strong performance (>90% accuracy)
-- Zero-shot proved more effective for this specific task
+**Classification Results:**
 
-## Technical Implementation
+| Method | Fake Detection |
+|--------|----------------|
+| Random Undersampling + NB + TF-IDF | **80.4%** |
+| Synthetic Augmentation | 45.7% |
+| Imbalanced Baseline | 40.3% |
 
-### Data Generation Methodology
-- **Prompt Engineering**: 5 topic-specific prompts targeting fake tweet characteristics
-- **Stylistic Targeting**: Word count, exclamation usage, hashtag patterns, vocabulary
-- **Quality Control**: Cleaning, filtering, and validation of generated content
-- **Cost Optimization**: Batch generation (10 tweets per API call) with rate limiting
+**GPT-3.5 vs GPT-4 Comparison:**
+- Performance: GPT-4 (67.3%) vs GPT-3.5 (63.2%) - 4.1% difference
+- Cost: GPT-4 ($10.76) vs GPT-3.5 ($1.08) - **90% savings**
+- Consistency: GPT-3.5 superior (CV: 0.3% vs 3.4%)
+- **Decision:** GPT-3.5 chosen for excellent cost-performance ratio
+
+---
+
+### 3. Articles Dataset
+
+**Source:** Kaggle Fake News Dataset | **Model:** GPT-3.5 Turbo
+
+| Metric | Value |
+|--------|-------|
+| Real articles | 11,272 (politicsNews) |
+| Fake articles | 9,050 (News) |
+| Imbalance gap | 2,222 (19.7%) |
+| Synthetic generated | 2,222 |
+| Validation F1 | 0.985 |
+
+**Feature Categories Analyzed:**
+- Length: character/word counts, sentence length, paragraph structure
+- Stylistic: punctuation, capitalization, quotation usage
+- Semantic: sentiment, subjectivity, named entity density
+- Linguistic: readability (Flesch, SMOG, FOG), lexical diversity, POS tags
+- Vocabulary: discriminative unigrams/bigrams
+
+**Top Discriminating Features:**
+
+| Feature | Fake News | Real News | Z-Score |
+|---------|-----------|-----------|---------|
+| Subjectivity | 0.45-0.65 | 0.30-0.45 | 0.57 |
+| Commas/article | 20-30 | 8-15 | 1.00 |
+| Word count | 800-900 | 500-700 | 1.03 |
+| Gunning Fog | 14-18 | 11-14 | 0.72 |
+
+**Dataset Configurations Tested:**
+- Full (~20K), 15K, 10K, 5K subsets
+- All maintained 2,222-article gap to isolate balancing impact
+
+---
+
+### 4. Multilingual Dataset
+
+**Source:** TALLIP Multilingual Fake News | **Model:** GPT-4 Turbo
+
+| Metric | Value |
+|--------|-------|
+| Languages | Vietnamese, English, Hindi, Swahili, Indonesian |
+| Real articles | 2,480 |
+| Fake articles | 2,476 (before removal) |
+| Synthetic generated | 500 (100 per language) |
+| Validation compliance | 70-85% features in target |
+
+**Language-Agnostic Features (16 total):**
+- Length: char_count, word_count, avg_word_length, sentence_count, avg_sentence_length
+- Punctuation: exclamation_ratio, question_ratio, punctuation_ratio, ellipsis_count, quote_count
+- Case: uppercase_ratio, capital_word_ratio
+- Content: digit_ratio, lexical_diversity, short_word_ratio, long_word_ratio
+
+**Overall Classification Results (Random Forest):**
+
+| Variant | Accuracy | F1 (Fake) | F1 (Legit) |
+|---------|----------|-----------|------------|
+| **Synthetic** | **0.9382** | **0.9356** | **0.9407** |
+| Random OS | 0.9371 | 0.9345 | 0.9396 |
+| Original | 0.9236 | 0.9189 | 0.9280 |
+
+**Per-Language Performance:**
+
+| Language | Original | Random OS | Synthetic | Winner |
+|----------|----------|-----------|-----------|--------|
+| English | 0.9356 | **0.9546** | 0.9500 | Random OS |
+| Indonesian | 0.9159 | **0.9281** | 0.9239 | Random OS |
+| Vietnamese | 0.9103 | 0.9157 | **0.9200** | Synthetic |
+| Hindi | 0.9046 | 0.9146 | **0.9231** | Synthetic |
+| Swahili | 0.8788 | 0.8888 | **0.9032** | Synthetic |
+
+**Key Finding:** Synthetic wins **3/5 languages** + overall. Greatest improvement in low-resource languages (Swahili +2.44%).
+
+---
+
+## 🔬 Technical Implementation
+
+### Generation Methodology
+- **Prompt Engineering:** Domain-specific prompts targeting extracted stylistic features
+- **Stylistic Targeting:** Word count, punctuation patterns, vocabulary, n-grams, topics
+- **Quality Control:** Cleaning, filtering, validation against target distributions
+- **Cost Optimization:** Batch generation with rate limiting
 
 ### Classification Framework
-- **Model**: Random Forest (100 estimators)
-- **Features**: Count Vectorization (5K features, 1-2 grams)
-- **Evaluation**: F1 score for minority class (fake tweets)
-- **Validation**: 80/20 stratified train/test split
+- **Models:** Random Forest, Naive Bayes, Logistic Regression, SVM
+- **Features:** TF-IDF / Count Vectorization (5K features, 1-2 grams)
+- **Evaluation:** F1 score for minority class, stratified train/test split
+- **Controls:** Proper data splitting before oversampling (no leakage)
 
-### Experimental Controls
-- **Consistent Random Seeds**: Reproducible results across experiments
-- **Proper Data Splitting**: Train/test split before oversampling to avoid data leakage
-- **Multiple Baselines**: Comprehensive comparison including undersampling
-- **Corrected Methodology**: Fixed data leakage issues in traditional oversampling
+### Experimental Rigor
+- Consistent random seeds for reproducibility
+- Multiple baselines (undersampling, oversampling, imbalanced)
+- Statistical significance testing (Cohen's d, t-tests)
+- Multi-scale testing with robustness analysis
 
-## Limitations and Future Work
+---
+
+## 💡 Key Insights
+
+### What Works
+✅ **Stylistic pattern extraction** identifies real distinguishing features  
+✅ **Controlled evaluation** shows stylistic models generalize better  
+✅ **Cost-effective generation** ($0.33-$5.00 per dataset)  
+✅ **Low-resource languages** benefit most from synthetic augmentation  
+✅ **GPT-3.5 sufficient** for English datasets (90% cost savings vs GPT-4)
 
 ### Limitations
-1. **Marginal Improvements**: Stylistic synthetic data showed only modest gains over random oversampling
-2. **Generation Quality**: Some stylistic features (word count, hashtags) didn't perfectly match targets
-3. **Cost Consideration**: $0.33 generation cost vs. free random duplication
-4. **Limited Scope**: Analysis focused on Twitter fake news classification only
+⚠️ Traditional resampling often matches or beats synthetic on standard test sets  
+⚠️ Some stylistic features harder to match (hashtags, exact word count)  
+⚠️ Performance varies between test batches and full datasets  
+⚠️ GPT-4 required for multilingual generation
 
-### Future Research Directions
-1. **Prompt Refinement**: Improve generation to better match target stylistic features
-2. **Multi-Modal Features**: Incorporate user behavior, network features, and temporal patterns
-3. **Domain Adaptation**: Test approach on other fake news domains (Facebook, news articles)
-4. **Advanced Models**: Evaluate with transformer-based classifiers (BERT, RoBERTa)
-5. **Severe Imbalance**: Further investigation of extreme imbalance scenarios (>50%)
+### Research Contributions
+1. **First systematic study** of stylistic synthetic data for fake news
+2. **Comprehensive imbalance severity analysis** framework
+3. **Corrected experimental methodology** avoiding data leakage
+4. **Evidence-based generation strategies** derived from quantitative analysis
+5. **Cost-effective pipeline** for synthetic data augmentation
 
-## Files Generated
+---
+
+## 📋 Files Generated
 
 ### Data Files
-- `stylistic_synthetic_tweets_20250818_163209.csv` - Generated synthetic tweets with metadata
-- `synthetic_fake_tweets_20250818_163209.txt` - Tweet texts only
-- `llm_generated_combined_20250818_195149.csv` - Controlled test dataset
+- `synthetic_*.csv` - Generated synthetic content with metadata
+- `*_feature_analysis_*.csv` - Extracted features per dataset
+- `classification_*_results.csv` - Model performance comparisons
 
 ### Model Files
-- `saved_models/` directory containing 8 trained models
-- `model_inventory_updated_20250818_191649.csv` - Model registry
-- Individual model files (`.joblib`), vectorizers, and metadata (`.json`)
+- `saved_models/` - Trained classifiers (.joblib)
+- `*_vectorizer.joblib` - Fitted vectorizers
+- `*_metadata.json` - Model parameters and metrics
 
-### Results Files
-- `classification_evaluation_results.json` - LLM classification results
-- `stylistic_synthetic_classification_results_20250818_170857.csv` - ML results
-- `generation_summary_20250818_163209.json` - Generation metadata
+### Reports
+- `analysis_results/summaries/` - Markdown analysis reports
+- `*_summary.json` - Experiment metadata
 
-## Conclusion
+---
 
-This research demonstrates that **stylistic synthetic data generation is technically feasible and competitive** with traditional oversampling methods. While the improvements are modest (+0.03% over baseline), the approach shows promise, particularly:
+## 🚀 Usage
 
-1. **Controlled Evaluation Success**: Stylistic models consistently outperformed traditional models on controlled test data
-2. **Methodological Rigor**: Proper experimental design avoided common data leakage pitfalls
-3. **Cost-Effective Generation**: $0.33 for 3,772 high-quality synthetic tweets
-4. **Scalable Framework**: Established replicable methodology for synthetic data generation
+### Running the Pipeline
 
-The research validates the hypothesis that **linguistic pattern matching can enhance fake news classification**, though further optimization is needed to achieve breakthrough performance gains. The framework established here provides a solid foundation for future work in synthetic data augmentation for imbalanced text classification tasks.
+For each dataset, run notebooks in order:
 
-## Research Impact
+1. **Feature Analysis** → Extract stylistic patterns
+2. **Generation** → Create synthetic data using patterns
+3. **Classification** → Evaluate vs baselines
 
-**Methodological Contributions:**
-- First systematic study of stylistic synthetic data for fake news classification
-- Comprehensive imbalance severity analysis framework  
-- Corrected experimental methodology avoiding data leakage
-- Cost-effective LLM-based synthetic data generation pipeline
+### Quick Start
 
-**Practical Applications:**
-- Improved fake news detection systems
-- Enhanced performance under severe class imbalance
-- Scalable synthetic data augmentation for text classification
-- Replicable experimental framework for similar research
+```python
+# Navigate to dataset folder
+cd stylistic_data/tweets/
 
-This work advances the state-of-the-art in fake news detection and provides valuable insights for practitioners working with imbalanced text classification problems.
+# Run notebooks in order:
+# 1. tweet_feature_analysis.ipynb
+# 2. stylistic_synthetic_tweet_generation.ipynb
+# 3. stylistic_imbalance_severity_analysis.ipynb
+```
+
+---
+
+**Last Updated:** December 2025  
+**Total Synthetic Items Generated:** 18,180 (3,772 + 11,686 + 2,222 + 500)  
+**Total Cost:** ~$8.00
